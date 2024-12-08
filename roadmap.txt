@@ -1,0 +1,49 @@
+Daily Affirmations App - Learning Roadmap
+
+1. Project Setup & Basic Structure (Already Done)
+   ✓ Next.js project initialization
+   ✓ Tailwind CSS setup
+   ✓ DaisyUI integration
+
+2. Core Concepts & Initial Development
+   - Understanding React components and JSX
+   - Learning state management with useState
+   - Creating the basic layout structure
+   - Implementing dark/light theme toggle
+
+3. Affirmations Feature Implementation
+   - Creating an affirmations data structure
+   - Building the main affirmation display component
+   - Implementing random affirmation selection
+   - Adding favorite functionality
+   
+4. Local Storage Integration
+   - Learning about browser local storage
+   - Saving favorite affirmations
+   - Persisting user preferences
+
+5. Notification System
+   - Understanding basic timing functions
+   - Implementing customizable notification timing
+   - Creating notification components
+   - Adding notification preferences
+
+6. API Integration (Next.js API Routes)
+   - Creating API routes for affirmations
+   - Understanding basic CRUD operations
+   - Implementing data fetching
+
+7. Polish & Enhancement
+   - Adding animations and transitions
+   - Improving UI/UX
+   - Error handling
+   - Performance optimization
+
+Learning Objectives for Each Phase:
+- React Fundamentals (Components, Props, State)
+- Next.js App Router and Pages
+- Tailwind CSS Styling
+- Local Storage API
+- JavaScript Timing Functions
+- API Routes and Data Fetching
+- UI/UX Best Practices
