@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import AffirmationCard from '@/components/AffirmationCard';
 import ThemeToggle from '@/components/ThemeToggle';
 import affirmations from '@/data/affirmations';
@@ -9,6 +9,14 @@ export default function Home() {
   const [favorites, setFavorites] = useState([]);
   const [showFavorites, setShowFavorites] = useState(false);
 
+  // Load favorites from localStorage on component mount
+  useEffect(() => {
+    const savedFavorites = localStorage.getItem('favorites');
+    if (savedFavorites) {
+      setFavorites(JSON.parse(savedFavorites));
+    }
+  }, []);
+
   const getRandomAffirmation = () => {
     const randomIndex = Math.floor(Math.random() * affirmations.length);
     setCurrentAffirmation(affirmations[randomIndex]);
@@ -16,11 +24,13 @@ export default function Home() {
 
   const toggleFavorite = (id) => {
     setFavorites(prevFavorites => {
-      if (prevFavorites.includes(id)) {
-        return prevFavorites.filter(favId => favId !== id);
-      } else {
-        return [...prevFavorites, id];
-      }
+      const newFavorites = prevFavorites.includes(id)
+        ? prevFavorites.filter(favId => favId !== id)
+        : [...prevFavorites, id];
+      
+      // Save to localStorage whenever favorites change
+      localStorage.setItem('favorites', JSON.stringify(newFavorites));
+      return newFavorites;
     });
   };
 

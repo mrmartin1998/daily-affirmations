@@ -15,7 +15,7 @@ Daily Affirmations App - Learning Roadmap
    ✓ Creating an affirmations data structure
    ✓ Building the main affirmation display component
    ✓ Implementing random affirmation selection
-   - Adding favorite functionality
+   ✓ Adding favorite functionality
    
 4. Local Storage Integration
    - Learning about browser local storage
