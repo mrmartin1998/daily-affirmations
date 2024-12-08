@@ -6,15 +6,15 @@ Daily Affirmations App - Learning Roadmap
    ✓ DaisyUI integration
 
 2. Core Concepts & Initial Development
-   - Understanding React components and JSX
-   - Learning state management with useState
-   - Creating the basic layout structure
-   - Implementing dark/light theme toggle
+   ✓ Understanding React components and JSX
+   ✓ Learning state management with useState
+   ✓ Creating the basic layout structure
+   ✓ Implementing dark/light theme toggle
 
 3. Affirmations Feature Implementation
-   - Creating an affirmations data structure
-   - Building the main affirmation display component
-   - Implementing random affirmation selection
+   ✓ Creating an affirmations data structure
+   ✓ Building the main affirmation display component
+   ✓ Implementing random affirmation selection
    - Adding favorite functionality
    
 4. Local Storage Integration
